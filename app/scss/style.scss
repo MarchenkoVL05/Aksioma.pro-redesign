@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-x: hidden;
 }
 
 // Header
@@ -154,6 +155,11 @@ body {
     font-size: 16px;
     color: #a9a9a9;
     margin-top: 16px;
+    line-height: 150%;
+    transition: 0.2s all;
+  }
+  &__menu-link:hover {
+    color: #cccccc;
   }
 
   &__logo {
@@ -314,5 +320,254 @@ body {
   }
   &__form-btn:hover {
     max-width: 175px;
+  }
+}
+
+// Navigation
+.navigation {
+  max-width: 1364px;
+  margin: 118px auto 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+
+  &__item {
+    width: 296px;
+    height: 392px;
+    background: #ffffff;
+    box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.1);
+    border-radius: 15px;
+    position: relative;
+    padding: 27px 10px 34px 27px;
+    transition: 0.2s all;
+    &:hover {
+      box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.14);
+    }
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    color: #464646;
+  }
+
+  &__item-descr {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #464646;
+    &--small-mt {
+      margin-top: 8px;
+    }
+  }
+
+  &__item-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 34px;
+  }
+
+  &__link {
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #126f85;
+    transition: 0.2s all;
+    position: relative;
+    z-index: 1;
+  }
+  &__link:hover {
+    color: #0c404c;
+    font-size: 17px;
+  }
+
+  &__item-img {
+    position: absolute;
+    bottom: 15px;
+    right: -20px;
+    z-index: 0;
+    &--planet {
+      bottom: -36px;
+      right: -72px;
+    }
+    &--laptop {
+      right: -55px;
+      bottom: -19px;
+    }
+    &--books {
+      right: -44px;
+      bottom: 25px;
+    }
+    &--visor {
+      bottom: -9px;
+      right: -56px;
+    }
+  }
+}
+
+.main-body {
+  background-image: url(../images/main-bg.png);
+  background-repeat: no-repeat;
+  background-position: center -100px;
+}
+
+// main-outsourse
+.main-outsourse {
+  margin-top: 780px;
+  min-height: 850px;
+  background-color: #f0f1f3;
+  position: relative;
+  padding-top: 100px;
+
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 36px;
+    color: #111928;
+  }
+
+  &__descr {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 150%;
+    color: #6b7280;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-top: 60px;
+    border-top: 1px solid #7e3af2;
+    padding-top: 16px;
+  }
+
+  &__list-item {
+    font-size: 18px;
+    line-height: 150%;
+    color: #111928;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__img {
+    position: relative;
+    right: -150px;
+  }
+}
+
+.our-team {
+  width: 1320px;
+  height: 630px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 750px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 36px 105px rgba(43, 56, 76, 0.1);
+  border-radius: 16px;
+  padding: 75px;
+
+  &__inner {
+    display: flex;
+    justify-self: center;
+    gap: 65px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 50px;
+    color: #132238;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #87909d;
+    margin-top: 32px;
+  }
+
+  &__left {
+    position: relative;
+  }
+
+  &__left-icons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
+    border-radius: 4px;
+    gap: 20px;
+  }
+
+  &__left-icon {
+    position: relative;
+  }
+
+  &__left-img {
+    height: 420px;
+    border-radius: 5%;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    gap: 24px;
+    margin-top: 44px;
+  }
+}
+
+.button {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #a53dff;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s all;
+  &:hover {
+    background-color: #8a39d1;
+  }
+}
+
+.button--price {
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #a53dff;
+  background-color: transparent;
+  border: 1px solid #a53dff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s all;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  img {
+    height: 20px;
+  }
+  &:hover {
+    color: #8d37d9;
+    border: 1px solid #7c2ebf;
   }
 }
