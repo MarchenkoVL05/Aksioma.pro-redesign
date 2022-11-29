@@ -12,6 +12,8 @@
         rel="stylesheet">
     <!-- Мои стили -->
     <link rel="stylesheet" href="style.css">
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body class="main-body">
@@ -33,15 +35,15 @@
                 </ul>
             </nav>
             <div class="auth-wrapper">
-                <button class="signIn-btn">Войти</button>
-                <button class="SignUp-btn">Зарегестрироваться</button>
+                <a href="#" class="signIn-btn">Войти</a>
+                <a href="#" class="SignUp-btn">Зарегестрироваться</a>
             </div>
         </div>
     </header>
 
     <main class="content">
         <!-- Navigation -->
-        <section class="navigation">
+        <section class="navigation fadeInLeft">
             <div class="navigation__item">
                 <div class="navigation__item-title">Системное администриро-вание</div>
                 <div class="navigation__item-descr navigation__item-descr--small-mt">Поддержка компьютеров, серверов
@@ -153,7 +155,7 @@
             <div class="our-team">
                 <div class="our-team__inner">
                     <div class="our-team__left">
-                        <img class="our-team__left-img" src="./images/person.png" alt="">
+                        <img class="our-team__left-img" src="./images/1c-img.png" alt="">
                         <div class="our-team__left-icons">
                             <div class="our-team__left-icon">
                                 <img src="./images/1c.png" alt="">
@@ -175,9 +177,341 @@
                         <div class="our-team__text">Не знаете что выбрать? Наши консультанты всегда на связи и готовы
                             вам помочь!</div>
                         <div class="our-team__buttons-wrapper">
-                            <button class="button--our-team button"><a href="#">Наши клиенты</a></button>
-                            <button class="button--price"><a href="#"><img src="./images/download.png"
-                                        alt="">Прайс-лист</a></button>
+                            <button class="button--our-team button">Наши клиенты</button>
+                            <button class="button--price"><img src="./images/download.png" alt="">Прайс-лист</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- visors -->
+        <section class="visors fadeInLeft">
+            <h2 class="visors__title title-semib">Видеонаблюдение</h2>
+            <h4 class="visors__subtitle subtitle">Благодаря системе видеонаблюдения вы сможете обеспечить безопасность
+                людей и<br>
+                оборудования на предприятии. Вот наши самые распространённые категории:</h4>
+
+            <div class="visors__inner">
+                <div class="visors__card">
+                    <img class="visors__img" src="./images/visors1.jpg" alt="">
+                    <div class="visors__card-content">
+                        <div class="visors__card-title">Видеонаблюдение на заводе</div>
+                        <div class="visors__descr">Контроль за материальными ценностями, наблюдение за периметром,
+                            мониторинг рабочего процесса на предприятии.</div>
+                        <button class="visors__btn button--price">
+                            Подробнее
+                            <img src="./images/right_arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="visors__card">
+                    <img class="visors__img" src="./images/visors2.jpg" alt="">
+                    <div class="visors__card-content">
+                        <div class="visors__card-title">Видеонаблюдение в кафе</div>
+                        <div class="visors__descr">Защита от краж продуктов на кухне, защита от от манипуляций с
+                            наличными на кассе, защита бара от продаж своего алкоголя барменами.</div>
+                        <button class="visors__btn button--price">
+                            Подробнее
+                            <img src="./images/right_arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="visors__card">
+                    <img class="visors__img" src="./images/visors3.jpg" alt="">
+                    <div class="visors__card-content">
+                        <div class="visors__card-title">Видеонаблюдение в магазин</div>
+                        <div class="visors__descr">Предотвращения потерь в розничном магазине и для обеспечения
+                            безопасности посетителей и сотрудников..</div>
+                        <button class="visors__btn button--price">
+                            Подробнее
+                            <img src="./images/right_arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="visors__card">
+                    <img class="visors__img" src="./images/visors4.jpg" alt="">
+                    <div class="visors__card-content">
+                        <div class="visors__card-title">Видеонаблюдение на складе</div>
+                        <div class="visors__descr">Помогает решить, как минимум две задачи: удержать сотрудников от
+                            воровства и зафиксировать происходящие события. Чаще всего улучшается и производительность
+                            работы.</div>
+                        <button class="visors__btn button--price">
+                            Подробнее
+                            <img src="./images/right_arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="visors__card">
+                    <img class="visors__img" src="./images/visors5.jpg" alt="">
+                    <div class="visors__card-content">
+                        <div class="visors__card-title">Видеонаблюдение в офис</div>
+                        <div class="visors__descr">Безопасность персонала, материальных ценностей в офисе и компании в
+                            целом: обеспечение пожарной и санитарной безопасности..</div>
+                        <button class="visors__btn button--price">
+                            Подробнее
+                            <img src="./images/right_arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="visors__card">
+                    <img class="visors__img" src="./images/visors6.jpg" alt="">
+                    <div class="visors__card-content">
+                        <div class="visors__card-title">Видеонаблюдение в автосалоне</div>
+                        <div class="visors__descr">Защита имущества, обеспечения безопасности сотрудников, защиты от
+                            ответственности за несчастные случаи и оповещения торговых представителей о прибытии
+                            клиента.</div>
+                        <button class="visors__btn button--price">
+                            Подробнее
+                            <img src="./images/right_arrow.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="visors__btn-more button">Больше категорий</button>
+        </section>
+        <!-- monitor -->
+        <section class="monitor fadeInLeft">
+            <div class="monitor__inner">
+                <div class="monitor__cards">
+                    <div class="monitor__item">
+                        <img class="monitor__img" src="./images/mon4.png" alt="">
+                        <div class="monitor__title">Экономьте на топливе</div>
+                        <div class="monitor__descr">С датчиком уровня топлива вы сможете следить за расходом бензина
+                        </div>
+                    </div>
+                    <div class="monitor__item">
+                        <img class="monitor__img" src="./images/mon3.png" alt="">
+                        <div class="monitor__title">Оптимизируйте маршруты</div>
+                        <div class="monitor__descr">Находите свободных сотрудников на карте и отправляйте их на
+                            ближайшие объекты
+                        </div>
+                    </div>
+                    <div class="monitor__item">
+                        <img class="monitor__img" src="./images/mon2.png" alt="">
+                        <div class="monitor__title">Контролируйте сотрудников</div>
+                        <div class="monitor__descr">Исключите личные поездки в рабочее время.
+                        </div>
+                    </div>
+                    <div class="monitor__item">
+                        <img class="monitor__img" src="./images/mon1.png" alt="">
+                        <div class="monitor__title">Доставляйте грузы целыми</div>
+                        <div class="monitor__descr">Отслеживайте температурный режим при перевозке продуктов,
+                            взрывоопасных веществ и других грузов, требующих особых условий.
+                        </div>
+                    </div>
+                </div>
+                <div class="monitor__content">
+                    <div class="monitor__content-subtitle">GPS-мониторинг</div>
+                    <h3 class="monitor__content-title">Мониторинг транспорта<br>и грузов на базе GPS и ГЛОНАСС</h3>
+                    <div class="monitor__content-descr">Оптимизируйте маршруты грузоперевозок и сократите<br>затраты на
+                        топливо
+                    </div>
+                    <div class="monitor__links">
+                        <a class="monitor__links-item" href="#">
+                            Какие задачи решает GPS-мониторинг
+                            <img class="monitor__link-img" src="./images/right_arrow.png" alt="">
+                        </a>
+                        <a class="monitor__links-item" href="#">
+                            Какому бизнесу подходит мониторинг транспорта
+                            <img class="monitor__link-img" src="./images/right_arrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- web -->
+        <section class="web fadeInLeft">
+            <h2 class="title-bold web__title">Веб-разработка</h2>
+            <h4 class="web__subtitle subtitle">Это наши лучшие работы, разработанные для наших клиентов!</h4>
+            <div class="web__cards">
+                <div class="web__item">
+                    <img class="web__item-img" src="./images/web1.png" alt="">
+                    <div class="web__item-content">
+                        <div class="web__item-title">Эко поле</div>
+                        <div class="web__item-descr">Маркетплейс для продажи фермерских товаров</div>
+                    </div>
+                </div>
+                <div class="web__item">
+                    <img class="web__item-img" src="./images/web3.jpg" alt="">
+                    <div class="web__item-content">
+                        <div class="web__item-title">Приватум</div>
+                        <div class="web__item-descr">Бухгалтерские услуги
+                            Налоговые консультанты</div>
+                    </div>
+                </div>
+                <div class="web__item">
+                    <img class="web__item-img" src="./images/web2.jpg" alt="">
+                    <div class="web__item-content">
+                        <div class="web__item-title">DeliveryPC</div>
+                        <div class="web__item-descr">Интернет-магазин комплектующих для ПК</div>
+                    </div>
+                </div>
+                <div class="web__item">
+                    <img class="web__item-img" src="./images/web4.jpg" alt="">
+                    <div class="web__item-content">
+                        <div class="web__item-title">Праздничный сервис</div>
+                        <div class="web__item-descr">Организация и проведение детских праздников</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- design -->
+        <section class="web-proposal">
+            <div class="web-proposal__inner fadeInLeft">
+                <div class="web-proposal__content">
+                    <div class="web-proposal__title title-semib">Что мы можем?</div>
+                    <div class="web-proposal__subtitle subtitle">В зависимости от особенностей вашего бизнеса
+                        и<br>поставленных
+                        целей
+                        мы можем разработать как<br>отдельный сайт, так и интернет-магазин.<br><br>
+                        У нас есть специалисты в сфере веб разработки,<br>которые готовы реализовать все ваши идеи, так
+                        что<br>
+                        можете полностью нам довериться.
+                    </div>
+                    <button class="web-proposal__btn button">Подробнее</button>
+                </div>
+                <div class="web-proposal__cards">
+                    <div class="web-proposal__item">
+                        <div class="web-proposal__item-title">User Experience (UX)</div>
+                        <div class="web-proposal__item-descr">UX-дизайн отвечает за функции, адаптивность продукта и то,
+                            какие эмоции он вызывает у пользователей. Чем понятнее интерфейс, тем легче пользователю
+                            получить результат и совершить целевое действие.
+                        </div>
+                    </div>
+                    <div class="web-proposal__item">
+                        <div class="web-proposal__item-title">User Interface (UI)</div>
+                        <div class="web-proposal__item-descr">Современный user interface должен быть удобным,
+                            функциональным и динамичным. При его разработке важно учитывать все этапы взаимодействия с
+                            продуктом: от первого касания до регулярного использования. Каждый экран приложения, кнопка,
+                            текстовое описание имеют значение.
+                        </div>
+
+                    </div>
+                    <div class="web-proposal__item">
+                        <div class="web-proposal__item-title">Веб-разработка</div>
+                        <div class="web-proposal__item-descr">Процесс дизайна макета страницы плавно перетекает в
+                            процесс разработки. На данном этапе мы выбираем подходящую платформу для разработки, тут
+                            может быть выбран конструктор сайтов, cms или создание сайта “вручную”.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- bx24 -->
+        <section class="bx24 fadeInLeft">
+            <h2 class="bx24__title">Битрикс24</h2>
+            <div class="bx24__subtitle">Новый уровень совместной работы Вашей компании!</div>
+            <div class="bx24__cards">
+                <div class="bx24__item">
+                    <a class="bx24__item-free" href="#">Бесплатный тариф</a>
+                    <div class="bx24__item-title">Базовый</div>
+                    <div class="bx24__item-descr">Для эффективной работы небольших компаний и отделов продаж</div>
+                    <div class="bx24__item-price">₽1 990 <span>/мес.</span></div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">5 пользователей</div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">24 Гб</div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Места на диске: <span>24
+                            гигабайта</span></div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Поддержка: <span>6
+                            месяцев</span></div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Бесплатные обновления: <span>6
+                            месяцев</span>
+                    </div>
+                    <a class="bx24__item-btn" href="#">Узнать больше</a>
+                </div>
+                <div class="bx24__item">
+                    <div class="bx24__item-title">Стандартный</div>
+                    <div class="bx24__item-descr">Для совместной работы всей компании или рабочих групп</div>
+                    <div class="bx24__item-price">₽5 590 <span>/мес.</span></div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">50 пользователей</div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">100 Гб</div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Места на диске: <span>100
+                            гигабайтов</span></div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Поддержка: <span>1 год</span>
+                    </div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Бесплатные обновления: <span>1
+                            год</span>
+                    </div>
+                    <a class="bx24__item-btn" href="#">Узнать больше</a>
+                </div>
+                <div class="bx24__item">
+                    <div class="bx24__item-title">Профессиональный</div>
+                    <div class="bx24__item-descr">Для максимальной автоматизации всех процессов в компании</div>
+                    <div class="bx24__item-price">₽11 190 <span>/мес.</span></div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">100 пользователей</div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">1024 Гб</div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Места на диске: <span>1024
+                            гигабайта</span></div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Поддержка:
+                        <span>Навсегда</span>
+                    </div>
+                    <div class="bx24__item-setting"><img src="./images/check.png" alt="">Бесплатные обновления:
+                        <span>Всегда</span>
+                    </div>
+                    <a class="bx24__item-btn" href="#">Узнать больше</a>
+                </div>
+            </div>
+
+            <div class="bx24__redirect">
+                <div class="bx24__redirect-title">Подробнее о всех тарифах</div>
+                <div class="bx24__redirect-descr">Перейти на сайт Битрикс24</div>
+                <a href="https://www.bitrix24.ru/prices/" class="bx24__redirect-link">Ознакомиться</a>
+            </div>
+        </section>
+        <!-- school -->
+        <section class="school fadeInLeft">
+            <div class="school__inner">
+                <div class="school__content">
+                    <div class="school__title">Учебный центр</div>
+                    <div class="school__descr">Мы даём детям возможность выбирать своё будущее.<br>Пусть каждый ребёнок
+                        будет
+                        успешен в жизни!</div>
+                    <a class="school__link" href="#">Узнать больше</a>
+                    <div class="school__prof-descr">На нашем сайте Вы можете пройти тест на<br>профориентацию, чтобы
+                        узнать
+                        какая профессия<br>подходит именно Вам!</div>
+                    <a class="school__prof-link" href="#">Перейти к тесту</a>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon__item">
+                        <div class="accordeon__item-title">
+                            Принимаете ли вы стажёров?
+                            <img class="accordeon__item-arrow" src="./images/chevron-up.png" alt="">
+                        </div>
+                        <div class="accordeon__item-descr">
+                            Конечно! У нас можно пройти летнюю практику от Вашего учебного заведения, устроиться на
+                            летнюю стажировку или же полноценный full-time!<br>
+                            <b>Больше информации о вакансиях</b> <a href="#">можно прочитать здесь</a>.
+                        </div>
+                    </div>
+                    <div class="accordeon__item">
+                        <div class="accordeon__item-title">
+                            Можно ли пройти обучение по продуктам 1С ?
+                            <img class="accordeon__item-arrow" src="./images/chevron-up.png" alt="">
+                        </div>
+                        <div class="accordeon__item-descr">
+                            Да, мы предоставляем все необходимые учебные материалы, а так же вы всегда можете задать
+                            вопрос кому-то из наших специалистов
+                        </div>
+                    </div>
+                    <div class="accordeon__item">
+                        <div class="accordeon__item-title">
+                            Куда обращаться?
+                            <img class="accordeon__item-arrow" src="./images/chevron-up.png" alt="">
+                        </div>
+                        <div class="accordeon__item-descr">
+                            <a href="">Перейти в раздел с контактами</a>
+                        </div>
+                    </div>
+                    <div class="accordeon__item">
+                        <div class="accordeon__item-title">
+                            Кто преподаватели?
+                            <img class="accordeon__item-arrow" src="./images/chevron-up.png" alt="">
+                        </div>
+                        <div class="accordeon__item-descr">
+                            Все наши сотрудники высококвалифицированные специалисты, имеющие сертификаты от фирм 1С и
+                            Битрикс
                         </div>
                     </div>
                 </div>
@@ -234,6 +568,8 @@
                             Отправить<img src="./images/submit-img.png" alt="!">
                         </button>
                     </form>
+                    <p class="feedback__info">Защита от спама reCAPTCHA <a href="#">Конфиденциальность</a> и <a
+                            href="#">Условия использования</a></p>
                 </div>
             </div>
         </div>
@@ -304,6 +640,7 @@
         </div>
     </footer>
 
+    <script defer src="./js/main.js"></script>
 </body>
 
 </html>

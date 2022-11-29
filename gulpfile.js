@@ -19,7 +19,7 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-  return src("app/js/main.js").pipe(terser()).pipe(dest("dist"));
+  return src("app/js/*.js").pipe(terser()).pipe(dest("dist/js"));
 }
 
 // HTML Task
