@@ -359,8 +359,8 @@ body {
     transition: 0.4s all;
     position: relative;
     &:hover {
-      box-shadow: 32px 32px 20px rgba(43, 56, 76, 0.14);
-      transform: translateY(-5px);
+      box-shadow: 32px 32px 20px rgba(59, 73, 93, 0.196);
+      transform: translateY(-10px);
     }
   }
 
@@ -536,13 +536,34 @@ body {
 
   &__left-icon {
     position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    &:nth-child(1) {
+      background-color: #a53dff;
+    }
   }
 
   &__left-img {
     height: 330px;
     width: 500px;
     border-radius: 1%;
+    box-shadow: 5px 5px 12px rgb(0 0 0 / 24%);
+  }
+
+  &__left-descr {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 16px;
+    font-style: italic;
+    color: #808080;
   }
 
   &__buttons-wrapper {
@@ -699,16 +720,24 @@ body {
   }
 
   &__cards {
-    margin-top: 50px;
+    max-width: 1320px;
+    height: 420px;
+    margin: 50px auto 0;
+    overflow-x: hidden;
+  }
+
+  &__cards-inner {
     display: flex;
-    justify-content: center;
     gap: 24px;
+    width: 2680px;
+    transition: 0.4s all;
   }
 
   &__item-img {
     width: 100%;
     min-height: 226px;
     border-bottom: 1px solid #a53dff;
+    border-radius: 8px 8px 0 0;
   }
 
   &__item {
@@ -720,7 +749,7 @@ body {
     box-shadow: 0px 12px 24px rgba(28, 25, 25, 0.12);
     transition: 0.7s all;
     &:hover {
-      transform: scale(1.03);
+      background: #f0f0f0;
     }
   }
 
@@ -739,6 +768,28 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: #333333;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #c3c7ce;
+    border-radius: 100%;
+    box-shadow: 2px 2px 8px rgba(140, 140, 140, 0.471);
+    cursor: pointer;
+    &--active {
+      background: #210c33;
+      border-radius: 100px;
+      width: 30px;
+      height: 8px;
+    }
   }
 }
 
@@ -832,6 +883,7 @@ body {
   }
 }
 
+// web-proposal
 .web-proposal {
   margin-top: 100px;
   min-height: 972px;
