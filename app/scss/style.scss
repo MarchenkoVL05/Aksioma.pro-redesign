@@ -48,6 +48,7 @@ body {
 
 .header__menu {
   display: flex;
+  align-items: center;
   gap: 32px;
   list-style-type: none;
   padding: 0;
@@ -105,6 +106,10 @@ body {
   &:hover {
     color: #7e3af2;
   }
+  &--fw {
+    font-size: 24px;
+    font-weight: 500;
+  }
 }
 
 .SignUp-btn {
@@ -123,6 +128,111 @@ body {
   }
 }
 
+// burger menu
+.open-burger {
+  display: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #6c6c6c86;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.burger {
+  opacity: 0;
+  position: absolute;
+  right: -500px;
+  top: 0;
+  width: 500px;
+  height: 100%;
+  z-index: 3;
+  background-color: #fff;
+  box-shadow: -5px 0 25px #bbbbbb;
+  transition: 0.5s all;
+  overflow-y: scroll;
+
+  &__close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+  }
+  &__close-img {
+    height: 18px;
+  }
+  &__nav {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  &__item {
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.2s all;
+    color: #333333;
+    &:hover {
+      color: #a53dff;
+    }
+  }
+
+  &__nav-section {
+    padding: 20px 20px 20px;
+    border-bottom: 1px solid #eceaea;
+    &--mt30 {
+      margin-top: 30px;
+    }
+  }
+  &__nav-section-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  &__nav-section-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__nav-section-img {
+    height: 65px;
+    &--scaleL {
+      transform: scale(1.5);
+    }
+    &--scaleM {
+      transform: scale(1.3);
+    }
+  }
+  &__arrow {
+    transform: rotate(180deg);
+  }
+  &__nav-section-links-wrapper {
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__nav-section-link {
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s all;
+    &:hover {
+      color: #a53dff;
+    }
+  }
+}
 // Content
 .content {
   flex: 1 0 auto;
@@ -443,6 +553,7 @@ body {
 
   &__container {
     max-width: 1280px;
+    padding: 0 15px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -1228,3 +1339,6 @@ body {
     }
   }
 }
+
+// Адаптив главной страницы
+@import "./mainMedia.scss";

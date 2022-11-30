@@ -18,6 +18,37 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Бургер меню
+  let openBurger = document.querySelector(".open-burger");
+  let burger = document.querySelector(".burger");
+  let burgerClose = document.querySelector(".burger__close");
+  let overlay = document.querySelector(".overlay");
+
+  if (openBurger && burger && burgerClose && overlay) {
+    openBurger.addEventListener("click", () => {
+      burger.style.opacity = "1";
+      burger.style.transform = "TranslateX(-500px)";
+      overlay.style.display = "block";
+      document.querySelector("body").style.overflow = "hidden";
+    });
+
+    burgerClose.addEventListener("click", () => {
+      burger.style.opacity = "0";
+      burger.style.transform = "TranslateX(0)";
+      overlay.style.display = "none";
+      document.querySelector("body").style.overflowY = "visible";
+    });
+  }
+
+  let sectionInfo = document.querySelectorAll(".burger__nav-section-info");
+  if (sectionInfo) {
+    sectionInfo.forEach((section) => {
+      section.addEventListener("click", (e) => {
+        section.nextElementSibling.style.display = "flex";
+      });
+    });
+  }
+
   // Первый слайдер на главной странице
   let ourTeamSlider = document.querySelectorAll(".our-team__left-icon");
   let ourTeamSliderImg = document.querySelector(".our-team__left-img");
