@@ -1,8 +1,7 @@
 const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 
-const postcss = require("gulp-postcss");
-const cssnano = require("cssnano");
+var cssMinify = require("gulp-css-minify");
 const babel = require("gulp-babel");
 
 const imagemin = require("gulp-imagemin");
@@ -11,10 +10,7 @@ const browsersync = require("browser-sync").create();
 
 // Sass Task
 function scssTask() {
-  return src("app/scss/style.scss")
-    .pipe(sass())
-    .pipe(postcss([cssnano()]))
-    .pipe(dest("dist"));
+  return src("app/scss/style.scss").pipe(sass()).pipe(cssMinify()).pipe(dest("dist"));
 }
 
 // JavaScript Task

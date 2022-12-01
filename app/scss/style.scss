@@ -17,6 +17,12 @@ body {
   overflow-x: hidden;
 }
 
+.main-body {
+  background-image: url(./images/BG.png);
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+
 .fadeInLeft {
   transform: translateX(-50px);
   transition: 0.7s all;
@@ -148,6 +154,7 @@ body {
 }
 
 .burger {
+  display: none;
   opacity: 0;
   position: absolute;
   right: -500px;
@@ -205,6 +212,8 @@ body {
     gap: 10px;
     font-size: 20px;
     font-weight: 600;
+    width: 100%;
+    justify-content: space-between;
   }
   &__nav-section-img {
     height: 65px;
@@ -216,7 +225,7 @@ body {
     }
   }
   &__arrow {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
   &__nav-section-links-wrapper {
     margin-top: 15px;
@@ -245,6 +254,7 @@ body {
   background-color: #2b384c;
   position: relative;
   margin-top: 800px;
+  padding: 0 15px;
 
   &__menu-wrapper {
     max-width: 1200px;
@@ -516,11 +526,11 @@ body {
   &__item-img {
     position: absolute;
     bottom: 15px;
-    right: -20px;
+    right: -16px;
     z-index: 0;
     &--planet {
-      bottom: -36px;
-      right: -72px;
+      bottom: 25px;
+      right: 0px;
     }
     &--laptop {
       right: -55px;
@@ -537,23 +547,16 @@ body {
   }
 }
 
-.main-body {
-  background-image: url(../images/BG.png);
-  background-repeat: no-repeat;
-  background-position: center -100px;
-}
-
 // main-outsourse
 .main-outsourse {
   margin-top: 680px;
   min-height: 850px;
   background-color: #f0f1f3;
   position: relative;
-  padding-top: 100px;
+  padding: 100px 15px 15px;
 
   &__container {
     max-width: 1280px;
-    padding: 0 15px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -591,7 +594,7 @@ body {
 
   &__img {
     position: relative;
-    right: -150px;
+    right: 0px;
   }
 }
 
@@ -631,13 +634,17 @@ body {
     position: relative;
   }
 
+  &__left-content {
+    position: relative;
+  }
+
   &__left-icons {
     display: flex;
     justify-content: center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 45px;
+    bottom: -20px;
     background-color: #fff;
     padding: 10px;
     box-shadow: 0px 12px 20px rgba(28, 25, 25, 0.12);
@@ -668,7 +675,7 @@ body {
 
   &__left-descr {
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
     font-weight: 500;
@@ -681,6 +688,19 @@ body {
     display: flex;
     gap: 24px;
     margin-top: 44px;
+  }
+}
+
+.our-team-mobile {
+  display: none;
+  margin-top: 80px;
+  width: 100%;
+  padding: 50px 15px;
+  background-color: transparent;
+
+  .our-team__title {
+    font-size: 36px;
+    line-height: 53px;
   }
 }
 
@@ -837,6 +857,15 @@ body {
     overflow-x: hidden;
   }
 
+  &__cards-mobile {
+    display: none;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
   &__cards-inner {
     display: flex;
     gap: 24px;
@@ -907,6 +936,7 @@ body {
 // Monitor
 .monitor {
   margin-top: 200px;
+  padding: 0 10px;
   &__inner {
     display: flex;
     align-items: center;
@@ -935,9 +965,6 @@ body {
 
   &__img {
     max-height: 48px;
-  }
-
-  &__subitle {
   }
 
   &__title {
@@ -1235,13 +1262,11 @@ body {
 // school
 .school {
   margin-top: 50px;
+  padding: 0 15px;
   &__inner {
     display: flex;
     justify-content: center;
     gap: 131px;
-  }
-
-  &__content {
   }
 
   &__title {
@@ -1312,6 +1337,7 @@ body {
     font-weight: 500;
     font-size: 22px;
     color: #111928;
+    gap: 10px;
     &:not(:last-child) {
       border-bottom: 1px solid rgb(231, 231, 231);
     }

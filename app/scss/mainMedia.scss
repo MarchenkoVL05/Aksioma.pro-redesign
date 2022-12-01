@@ -1,13 +1,64 @@
 @media (max-width: 1400px) {
   .container {
     gap: 90px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .our-team {
+    width: 100%;
+    height: auto;
+  }
+
+  .monitor {
+    margin-top: 100px;
+  }
+
+  .web {
+    margin-top: 100px;
+    &__title {
+      font-size: 42px;
+    }
+    &__cards {
+      max-width: 1072px;
+      height: 370px;
+    }
+    &__item {
+      width: 250px;
+      min-height: 300px;
+    }
+    &__item-img {
+      min-height: 165px;
+    }
+    &__item-content {
+      padding: 0 24px 10px;
+    }
+  }
+
+  .web-proposal {
     padding: 0 10px;
+    gap: 103px;
+  }
+
+  .school {
+    margin-top: 100px;
+  }
+
+  .feedback {
+    width: 100%;
+    &__inner {
+      gap: 50px;
+    }
+    &__form {
+      width: auto;
+    }
   }
 }
 
 @media (max-width: 1280px) {
   .container {
-    width: 100%;
+    width: 95%;
     padding: 0 15px;
   }
 
@@ -22,11 +73,281 @@
   .open-burger {
     display: block;
   }
+
+  .our-team {
+    gap: 50px;
+    bottom: 650px;
+    &__title {
+      font-size: 26px;
+      line-height: 37px;
+    }
+    &__text {
+      margin-top: 20px;
+      &--hide {
+        display: none;
+      }
+    }
+    &__left-img {
+      width: auto;
+      height: 250px;
+    }
+    &__left-descr {
+      display: none;
+    }
+  }
+
+  .main-outsourse {
+    min-height: auto;
+    margin-top: 480px;
+    &__img {
+      height: 560px;
+      right: 0px;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+  }
+
+  .monitor {
+    &__inner {
+      gap: 30px;
+    }
+    &__content-title {
+      font-size: 28px;
+    }
+    &__content-descr {
+      font-size: 18px;
+    }
+    &__links-item {
+      max-width: 364px;
+    }
+  }
+
+  .web-proposal {
+    &__item {
+      width: 500px;
+      padding: 20px;
+    }
+    &__title {
+      font-size: 38px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .bx24 {
+    padding: 0 47px;
+    &__title {
+      margin-top: 50px;
+      font-size: 36px;
+    }
+    &__item {
+      width: 400px;
+      padding: 20px 15px 20px 15px;
+      min-height: 495px;
+    }
+    &__item-price {
+      font-size: 36px;
+      margin-top: 8px;
+    }
+    &__item-settings {
+      margin-top: 20px;
+    }
+    &__item-btn {
+      width: 220px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 1068px) {
+  .web__cards {
+    display: none;
+  }
+  .dots {
+    display: none;
+  }
+
+  .web__cards-mobile {
+    display: flex;
+  }
+
+  .web {
+    &__title {
+      font-size: 36px;
+    }
+    &__subtitle {
+      margin-top: 8px;
+    }
+  }
+
+  .web-proposal {
+    min-height: auto;
+    padding: 40px 15px;
+    &__inner {
+      flex-direction: column;
+      gap: 50px;
+    }
+    &__btn {
+      margin-top: 30px;
+    }
+    &__item {
+      width: auto;
+    }
+  }
+
+  .school {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    &__title {
+      font-size: 34px;
+    }
+    &__descr {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+    &__prof-descr {
+      margin-top: 20px;
+      font-size: 17px;
+    }
+  }
+
+  .accordeon {
+    width: 100%;
+    &__item-title {
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+    min-height: auto;
+    padding-top: 50px;
+    &__menu-wrapper {
+      gap: 30px;
+      margin: 80px auto 0;
+    }
+    &__menu-link {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main-outsourse {
+    margin-top: 0;
+    padding: 50px 15px;
+    &__img {
+      display: none;
+    }
+    &__descr {
+      font-size: 18px;
+      line-height: 130%;
+    }
+    &__title {
+      font-size: 32px;
+    }
+  }
+  .our-team {
+    display: none;
+  }
+
+  .our-team-mobile {
+    display: block;
+  }
+
+  .visors {
+    &__title {
+      margin-top: 45px;
+      font-size: 38px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__subtitle {
+      margin-top: 15px;
+    }
+    &__card {
+      width: 350px;
+    }
+  }
+
+  .monitor {
+    &__inner {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+  }
 }
 
 @media (max-width: 920px) {
   .navigation {
     margin: 70px auto 0;
+  }
+
+  .bx24 {
+    &__redirect {
+      width: auto;
+      height: auto;
+      padding: 15px;
+      margin: 35px auto 0;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+    &__redirect-title {
+      font-size: 20px;
+      text-align: center;
+    }
+    &__redirect-descr {
+      margin-top: 10px;
+      text-align: center;
+    }
+    &__redirect-link {
+      width: 138px;
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+
+  .footer {
+    margin-top: 620px;
+    padding-top: 0;
+  }
+
+  .feedback {
+    width: auto;
+    min-height: auto;
+    top: -550px;
+    &__inner {
+      justify-content: center;
+      padding: 50px 30px 30px;
+    }
+    &__form {
+      display: none;
+    }
+    &__contacts-title {
+      font-size: 25px;
+    }
+    &__contacts-subtitle {
+      display: none;
+    }
+    &__contacts-card {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__menu-wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
   }
 }
 
@@ -52,7 +373,7 @@
   }
 
   .burger__nav-section-name {
-    flex-direction: column;
+    justify-content: center;
     text-align: center;
     font-size: 16px;
   }
@@ -99,10 +420,175 @@
       right: 21px;
     }
   }
+
+  .our-team-mobile {
+    .our-team__buttons-wrapper {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .button--price {
+    justify-content: center;
+  }
+
+  .visors {
+    padding: 0 10px;
+    &__inner {
+      margin: 30px auto 0;
+    }
+    &__title {
+      font-size: 26px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      line-height: 21px;
+      margin-top: 5px;
+    }
+    &__card {
+      width: 300px;
+    }
+    &__card-content {
+      padding: 0 15px 21px;
+    }
+  }
+  .button--price {
+    padding: 10px 12px;
+  }
+
+  .web {
+    padding: 0 10px;
+    &__title {
+      font-size: 32px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+
+  .web-proposal {
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    &__subtitle {
+      margin-top: 10px;
+    }
+    &__item-title {
+      font-size: 18px;
+    }
+    &__item-descr {
+      font-size: 15px;
+      margin-top: 8px;
+    }
+  }
+
+  .bx24 {
+    &__subtitle {
+      margin-bottom: 70px;
+    }
+    &__item {
+      box-shadow: none;
+      border: none;
+    }
+    &__item-setting {
+      flex-wrap: wrap;
+      img {
+        display: none;
+      }
+    }
+    &__item-free {
+      left: 0;
+      right: 0;
+      top: -42px;
+      transform: rotate(0);
+      width: 100%;
+    }
+    &__item-btn {
+      border-radius: 30px;
+      font-size: 15px;
+      width: 164px;
+    }
+    &__item-price {
+      font-size: 24px;
+    }
+    &__item-setting {
+      justify-content: center;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+
+  .school {
+    margin-top: 50px;
+    &__title {
+      font-size: 28px;
+    }
+    &__descr {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    &__link {
+      width: 153px;
+      height: 39px;
+    }
+    &__prof-descr {
+      font-size: 16px;
+      line-height: 23px;
+    }
+    &__prof-link {
+      width: 164px;
+      height: 39px;
+    }
+  }
+
+  .accordeon__item-title {
+    margin-top: 10px;
+  }
+
+  .footer {
+    &__menu-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
 }
 
 @media (max-width: 420px) {
   .container {
     gap: 50px;
+  }
+
+  .our-team-mobile {
+    .our-team__title {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  .monitor {
+    margin-top: 100px;
+    &__content-title {
+      font-size: 24px;
+    }
+    &__content-descr {
+      font-size: 16px;
+    }
+    &__links {
+      margin-top: 25px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__links-item {
+      max-width: 264px;
+    }
+  }
+
+  .footer {
+    &__menu-link {
+      font-size: 14px;
+      margin-top: 8px;
+    }
   }
 }

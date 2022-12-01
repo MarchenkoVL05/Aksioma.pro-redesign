@@ -26,15 +26,21 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (openBurger && burger && burgerClose && overlay) {
     openBurger.addEventListener("click", () => {
-      burger.style.opacity = "1";
-      burger.style.transform = "TranslateX(-500px)";
+      burger.style.display = "block";
+      setTimeout(() => {
+        burger.style.opacity = "1";
+        burger.style.transform = "TranslateX(-500px)";
+      }, 0);
       overlay.style.display = "block";
-      document.querySelector("body").style.overflow = "hidden";
+      document.querySelector("body").style.overflowY = "hidden";
     });
 
     burgerClose.addEventListener("click", () => {
       burger.style.opacity = "0";
       burger.style.transform = "TranslateX(0)";
+      setTimeout(() => {
+        burger.style.display = "none";
+      }, 500);
       overlay.style.display = "none";
       document.querySelector("body").style.overflowY = "visible";
     });
